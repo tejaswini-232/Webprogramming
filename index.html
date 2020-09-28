@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <title>Assignment1</title>
+      <script>
+            if(document.images) {
+               var image1 = new Image(); // Preload an image
+               image1.src = "s4.png";
+               var image2 = new Image(); // Preload second image
+               image2.src = "s5.jpg";
+               var image3 = new Image(); // Preload second image
+               image3.src = "s6.jpg";
+            }
+      </script>
+      <style>
+         img{
+         width:150px;
+         height:150px;
+         padding:20px 20px 20px 20px;
+         }
+   </style>
+   </head>
+   <body>
+      <a href = "#" onMouseOver = "document.myImage1.src = image2.src;" onMouseOut = "document.myImage1.src = image1.src;">
+         <img name = "myImage1" src = "s4.png" />
+      <a href = "#" onMouseOver = "document.myImage2.src = image3.src;" onMouseOut = "document.myImage2.src = image2.src;">
+         <img name = "myImage2" src = "s5.jpg" />
+      <a href = "#" onMouseOver = "document.myImage3.src = image1.src;" onMouseOut = "document.myImage3.src = image3.src;">
+         <img name = "myImage3" src = "s6.jpg" />
+      </a>
+   </body>
+</html>
